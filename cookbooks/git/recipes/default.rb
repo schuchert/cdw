@@ -1,3 +1,3 @@
-apt_package "maven" do
-	action :git
+apt_package "git" do
+	action :install
 end
