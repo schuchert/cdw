@@ -2,9 +2,9 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "boxcutter/ubuntu1604"
-  config.vm.network "forwarded_port", guest: 9090, host: 9090
-  config.vm.network "forwarded_port", guest: 9000, host: 9000
-  config.vm.network "forwarded_port", guest: 29418, host: 29418
+  config.vm.network "forwarded_port", guest: 7765, host: 7765
+  config.vm.network "forwarded_port", guest: 9983, host: 9983
+  config.vm.network "forwarded_port", guest: 29677, host: 29677
 
   config.vm.provider "virtualbox" do |v|
     v.customize ["modifyvm", :id, "--cpuexecutioncap", "100"]
