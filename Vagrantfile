@@ -2,7 +2,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "boxcutter/ubuntu1604"
-  config.vm.network "forwarded_port", guest: 8080, host: 8080
+  config.vm.network "forwarded_port", guest: 9090, host: 9090
   config.vm.network "forwarded_port", guest: 9000, host: 9000
   config.vm.network "forwarded_port", guest: 29418, host: 29418
 
